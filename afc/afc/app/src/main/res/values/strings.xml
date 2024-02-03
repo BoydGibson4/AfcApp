@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">afc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_picker_button_description">Description for date picker button</string>
+    <string name="password" >Password</string>
+    <string name="username" >Username</string>
+    <string name="login" >login</string>
+    <string name="signuphere">Sign up Here</string>
+    <string name="signup" >Sign Up</string>
+    <string name="fullname" >Full Name</string>
+    <string name="email" >Email</string>
+    <string name="loginhere" >Log in Here</string>
+
+</resources>

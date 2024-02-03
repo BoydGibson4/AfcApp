@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="580dp"
+    android:id="@+id/myScrollView"
+    tools:context=".PredictApi.PredictionFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2001A">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/questionleague"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Where will Aberdeen Finish in the League" />
+
+                <!-- Dropdown -->
+                <Spinner
+                    android:id="@+id/dropdownSpinnerLeague"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_below="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questionscottishcup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="What stage will Aberdeen reach in the Scottish cup" />
+
+                <!-- Dropdown -->
+                <Spinner
+                    android:id="@+id/dropdownSpinnerScup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_below="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questionleaguecup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="What stage will Aberdeen reach in the league cup" />
+
+                <!-- Dropdown -->
+                <Spinner
+                    android:id="@+id/dropdownSpinnerLcup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_below="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questioneurope"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="What stage will Aberdeen reach in Europe" />
+                <!-- Dropdown -->
+                <Spinner
+                    android:id="@+id/dropdownSpinnerEurope"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card6"
+            android:layout_below="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questionleagueWinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Who will win the League" />
+
+                <!-- Text Input -->
+                <EditText
+                    android:id="@+id/textInputLeague"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Type your answer here" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card7"
+            android:layout_below="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questiongoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Who will be the top goal scorer" />
+
+                <!-- Text Input -->
+                <EditText
+                    android:id="@+id/textInputGoals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Type your answer here" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card8"
+            android:layout_below="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questionplayerseacon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Who will be Player of the season" />
+                <!-- Text Input -->
+                <EditText
+                    android:id="@+id/textInputPots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Type your answer here" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card9"
+            android:layout_below="@+id/card8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questionyplayerseason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Who will be young player of the season" />
+                <!-- Text Input -->
+                <EditText
+                    android:id="@+id/textInputYpots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Type your answer here" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card10"
+            android:layout_below="@+id/card9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questionrelegated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Who will get relegated" />
+                <!-- Text Input -->
+                <EditText
+                    android:id="@+id/textInputRelegated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Type your answer here" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/card10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="0dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/btn_dialog" />
+        <!-- Back Button -->
+        <!-- Replace ic_back_arrow with your back arrow icon -->
+    </RelativeLayout>
+
+</ScrollView>

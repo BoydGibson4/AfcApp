@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F9F9F9"
+    android:layout_height="250dp">
+
+    <ImageButton
+
+        android:id="@+id/predict"
+        android:layout_width="175dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/preddictions"
+        app:layout_constraintBottom_toTopOf="@+id/stadium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/table"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/preddictions" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintGuide_begin="-18dp" />
+
+
+    <ImageButton
+        android:id="@+id/table"
+        android:layout_width="361dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/table2"
+        app:layout_constraintEnd_toStartOf="@+id/predict"
+        app:layout_constraintStart_toEndOf="@+id/fixtures"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/table2" />
+
+    <ImageButton
+        android:id="@+id/news"
+        android:layout_width="361dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="27dp"
+        android:src="@drawable/news2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stadium"
+        app:layout_constraintStart_toEndOf="@+id/women"
+        app:layout_constraintTop_toBottomOf="@+id/table"
+        app:srcCompat="@drawable/news2" />
+
+    <ImageButton
+        android:id="@+id/women"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/women2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/news"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fixtures"
+        app:srcCompat="@drawable/women2" />
+
+    <ImageButton
+        android:id="@+id/stadium"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/stadium2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/news"
+        app:layout_constraintTop_toBottomOf="@+id/predict"
+        app:srcCompat="@drawable/stadium2" />
+
+    <ImageButton
+        android:id="@+id/fixtures"
+        android:layout_width="175dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/fixture"
+        app:layout_constraintBottom_toTopOf="@+id/table"
+        app:layout_constraintEnd_toStartOf="@+id/table"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
